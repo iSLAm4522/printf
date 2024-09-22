@@ -18,6 +18,9 @@ case 'c':
 	return (print_char(args));
 case 's':
 	return (print_string(args));
+case 'i':
+case 'd':
+	return (print_integer(args));
 default:
 	return ((_putchar('%')) + _putchar(format));
 }
